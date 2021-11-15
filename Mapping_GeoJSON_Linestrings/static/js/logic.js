@@ -75,10 +75,10 @@ let map = L.map('mapid', {
 L.control.layers(baseMaps).addTo(map);
 
 // Then we add our 'graymap' tile layer to the map.
-streets.addTo(map);
+//streets.addTo(map);
 
 // Accessing the Toronto airline routes GeoJSON URL.
-let torontoData = "https://github.com/jmarrujo31/Mapping_Earthquakes/blob/main/torontoRoutes.json";
+let torontoData = "https://raw.githubusercontent.com/jmarrujo31/Mapping_Earthquakes/main/torontoRoutes.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoData).then(function(data) {
